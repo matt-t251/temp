@@ -6,7 +6,7 @@ let question = function(q, a1, a2, a3, a) {
     this.a = a;
 }
 
-question.prototype.print = function() {
+question.prototype.display = function() {
     console.log('here');
     console.log(this.q);
     console.log('1. ' + this.a1);
@@ -32,7 +32,7 @@ function startQuiz() {
 function printQ() {
     rand = Math.ceil(Math.random() * 3 )
     console.log(rand);
-    q1.print;
+    q1.display;
 }
 
 startQuiz();
